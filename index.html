@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Mateen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="abdulmateenportfolio.css">
+    <link rel="shortcut icon" href="images/IMG_5167.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mateen's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="" id="home">Home</a></li>
+                    <li><a href="" id="about">About</a></li>
+                    <li><a href="" id="services">Services</a></li>
+                    <li><a href="" id="contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Abdul Mateen</span>
+                <div>and I am an</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="window.open('my resume/Abdul mateen.pdf', '_blank')">Download Resume</button>
+                    <button class="btn"><a href="https://github.com/Mateen-Shaikh">GitHub</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/IMG_1326(1).jpg" alt="My Image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="grey-text">Educational Background</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Matriculation
+                        <div>( 2017- 2019 )</div>
+                    </div>
+
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Studied from <span style="color: #9c97f1;">Army Public School and College Ordinance
+                                    Road</span>, Rawalpindi, Pakistan.</li><br>
+                            <li>Had <span style="color: #9c97f1;">Maths, Chemistry and Computer Science</span> as my
+                                core subjects.</li><br>
+                            <li>Scored <span style="color: #9c97f1;">79%</span> in my SSC-II exams.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Intermediate
+                        <div>( 2019 - 2021)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Studied from <span style="color: #9c97f1;">Army Public School and College </span>,
+                                Sargodha, Pakistan.</li><br>
+                            <li>Had <span style="color: #9c97f1;">Maths, Physics and Computer Science</span> as my core
+                                subjects.</li><br>
+                            <li>Scored <span style="color: #9c97f1;">94%</span> in my HSSC-II exams.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Bachelor's
+                        <div>( 2022 - Present)</div>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Studying from <a href="https://www.ssuet.edu.pk/" style="text-decoration: none;"
+                                    target="_blank"><span style="color: #9c97f1;">Sir Syed University of Engineering
+                                        and Technology</span></a>, Pakistan.</li><br>
+                            <li>I am in my process of completing my Bachelor's Degree in <span
+                                    style="color: #9c97f1;">Software Engineering.</span></li><br>
+                            <li>Currently having <span style="color: #9c97f1;">3.85 / 4.0</span> uptil now.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="form" id="form-id">
+        <form action="https://formsubmit.co/am4403158@gmail.com" method="post" id="contact-form">
+            <h2>Contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Abdul Mateen's Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <a href="" ><li>Home</li></a>
+                    <a href="" ><li>About</li></a>
+                    <a href="" ><li>Contact Me</li></a>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <a href="https://www.linkedin.com/in/abdul-mateen-b46907253/" target="_blank"><img
+                        src="https://img.shields.io/badge/-Abdul Mateen-0077B5?style=flat&logo=Linkedin&logoColor=white" /></a>
+                <a href="mailto:am4403158@gmail.com" target="_blank"><img
+                        src="https://img.shields.io/badge/-am4403158@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white" /></a>
+                <a href="https://www.instagram.com/am4403158/" target="_blank"><img
+                        src="https://img.shields.io/badge/-@am4403158-E4405F?style=flat&logo=Instagram&logoColor=white" /></a>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.abdulmateenportfolio.com | All rights Reserved
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contact-me').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('form-id').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.getElementById('home').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('firstSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('contact-form').reset();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Undergraduate Software Engineer', ' AI &amp; Chatbot student'],
+            typeSpeed: 40,
+        });
+    </script>
+</body>
+
+</html>
